@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-time Telemetry</title>
+    <!-- Laad eerst Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Laad vervolgens Socket.IO-client -->
     <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
 </head>
 <body>
-    <h1>Real-time Telemetry Dashboard</h1>
-    <canvas id="telemetryChart" width="400" height="200"></canvas>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <h1>Race Telemetrie</h1>
+    <!-- Canvas voor de grafiek -->
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+    <!-- Laad ten slotte je eigen script.js -->
+    <script src="/static/script.js"></script>
 </body>
 </html>
